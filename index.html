@@ -4,10 +4,10 @@ layout: landing
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<h2>{{ site.title }}</h2>
+							<h2><img src="images/anchor-white.svg" alt="Logo" style="height:1em" /> {{ site.title }}</h2>
 							<p>{{ site.description | markdownify }}</p>
 							<ul class="actions">
-								<li><a href="#" class="button special">Activate</a></li>
+								<li><a href="#cta" class="button special">Start Exploring</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -17,15 +17,14 @@ layout: landing
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>Better Questions, Better Insight</h2>
+								<p>Statistics shouldn't be an <em>obstacle</em>; it should be an <strong>enabler</strong>.
+								<br/>Lower anchor and dive into the richness of your data.</p>
 							</header>
 							<ul class="icons major">
-								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+								<li><span class="icon fa-sitemap major style1"><span class="label">Sitemap</span></span></li>
+								<li><span class="icon fa-line-chart major style2"><span class="label">Line Chart</span></span></li>
+								<li><span class="icon fa-anchor major style3"><span class="label">Anchor</span></span></li>
 							</ul>
 						</div>
 					</section>
@@ -33,75 +32,72 @@ layout: landing
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/unsplash-GWe0dlVD9e0-office.jpg" alt="" /></div><div class="content">
+								<h2>Business Analytics and Forecasting</h2>
+								<p>What will sales be like next year?  Who are my most profitable clients?
+								What <em>really</em> causes my customers to leave?  Gain insight from the data you already have,
+								and guidance for new data collection, to understand your customers and plan for the future.</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/unsplash-mE5MBZX5sko-5leaves.jpg" alt="" /></div><div class="content">
+								<h2>Social Science Statistics</h2>
+								<p>You're the domain expert in your field.  You've immersed yourself to understand your discipline, but you can't be
+								expected to be a stats expert, as well.  Get the most you can out of your data, and go deeper in your research.
+								Clients have come from fields as diverse as psychology, sociology, leadership, nursing, business, and more.</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/unsplash-5fNmWej4tAA-laptops.jpg" alt="" /></div><div class="content">
+								<h2>Dissertation / Thesis Help</h2>
+								<p>At any stage in your thesis -- whether early proposal, research ethics (REB/IRB) application, data collection,
+								or analysis -- I'm here as an advisor, an encourager, to walk alongside you in your journey through your data.
+								I've been there before; there is light at the end of the tunnel!</p>
 							</div>
 						</section>
 					</section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
+				<!-- Three -->{%
+					if site.tags.featured %}
+					<section id="three landing_features" class="wrapper style3 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>{{ site.features-title }}</h2>
 							</header>
-							<ul class="features">
-								<li class="icon fa-paper-plane-o">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-laptop">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-code">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-headphones">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-heart-o">
-									<h3>Aenean Primis</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-flag-o">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
+							<ul class="features">{%
+								for my_post in site.posts %}{%
+								if my_post.tags contains 'featured' %}{%
+								assign i = i | plus:1 %}
+								<li class="icon fa-{% if my_post.icon %}{{ my_post.icon }}{% else %}heart-o{% endif %}"><!-- featured:{{ i }} -->
+									<a href="{{ my_post.url | prepend:site.baseurl }}">
+										<div class="container">
+											<h3>{{ my_post.title }}</h3>
+											<p>{{ my_post.data}}<br />{{ my_post.excerpt | strip_html | truncatewords: 16 }}</p>
+										</div>
+									</a>
+								</li>{%
+								if i == 8 %}{%
+								break %}{%
+								endif %}{%
+								endif %}{%
+								endfor %}
 							</ul>
 						</div>
-					</section>
+					</section>{%
+					endif %}
 
 				<!-- CTA -->
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+								<h2>Free initial consultation</h2>
+								<p>Contact me to setup your free half-hour consultation,
+								in-person anywhere in the Greater Vancouver area, or 
+								via teleconference anywhere in the world.</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="#" class="button fit special">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
+								<li><a href="mailto:anchor@seanho.com?subject=Anchorlytics_consult" class="button fit special">Get Started</a></li>
+								<!-- <li><a href="#one" class="button fit">Learn More</a></li> -->
 							</ul>
 						</div>
 					</section>
