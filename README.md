@@ -1,6 +1,6 @@
 # Anchorlytics Consulting
 
-http://www.anchorlytics.com
+https://anchorlytics.com
 
 Single-page splash site, plus a blog.
 Using Ruby Jekyll, hosted on Github Pages.
